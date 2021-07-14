@@ -18,6 +18,6 @@ Contains the software you need. These are intended to be loaded using the Arduin
 
 ## Documentation
 
-Contains any documentation, mostly surrounding the software. This is stuff you _shouldn't_ need as a home user, but might want if you're modifying the software - for example, to make it DCS-BIOS compatible, or similiar.
+Contains any documentation, mostly surrounding the software. This is stuff you _shouldn't_ need as a home user, but might want if you're modifying the software.
 
 For any further questions or queries, you can contact me at brunius@brunius.me or Brunius#5625 on Discord.
