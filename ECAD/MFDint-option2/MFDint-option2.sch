@@ -103,19 +103,6 @@ F 3 "" H 3650 1050 50  0001 C CNN
 	1    3650 1050
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+5V #PWR0104
-U 1 1 60C40200
-P 3650 750
-F 0 "#PWR0104" H 3650 600 50  0001 C CNN
-F 1 "+5V" H 3665 923 50  0000 C CNN
-F 2 "" H 3650 750 50  0001 C CNN
-F 3 "" H 3650 750 50  0001 C CNN
-	1    3650 750 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3650 750  3700 750 
 Wire Wire Line
 	3700 850  3650 850 
 Wire Wire Line
@@ -445,16 +432,14 @@ $EndComp
 $Comp
 L power:+5V #PWR0108
 U 1 1 60D08791
-P 3650 1500
-F 0 "#PWR0108" H 3650 1350 50  0001 C CNN
-F 1 "+5V" H 3665 1673 50  0000 C CNN
-F 2 "" H 3650 1500 50  0001 C CNN
-F 3 "" H 3650 1500 50  0001 C CNN
-	1    3650 1500
+P 4900 600
+F 0 "#PWR0108" H 4900 450 50  0001 C CNN
+F 1 "+5V" H 4915 773 50  0000 C CNN
+F 2 "" H 4900 600 50  0001 C CNN
+F 3 "" H 4900 600 50  0001 C CNN
+	1    4900 600 
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3650 1500 3700 1500
 Wire Wire Line
 	3700 1600 3650 1600
 Wire Wire Line
@@ -605,8 +590,6 @@ F 3 "~" H 9600 1050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9350 950  9400 950 
-Wire Wire Line
 	9400 1050 9350 1050
 Wire Wire Line
 	9350 1150 9400 1150
@@ -704,8 +687,6 @@ F 3 "~" H 9600 1800 50  0001 C CNN
 	1    9600 1800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9350 1700 9400 1700
 Wire Wire Line
 	9400 1800 9350 1800
 Wire Wire Line
@@ -821,23 +802,12 @@ $EndComp
 $Comp
 L power:VCC #PWR0113
 U 1 1 60DE50D9
-P 9350 950
-F 0 "#PWR0113" H 9350 800 50  0001 C CNN
-F 1 "VCC" H 9365 1123 50  0000 C CNN
-F 2 "" H 9350 950 50  0001 C CNN
-F 3 "" H 9350 950 50  0001 C CNN
-	1    9350 950 
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR0114
-U 1 1 60DEBA77
-P 9350 1700
-F 0 "#PWR0114" H 9350 1550 50  0001 C CNN
-F 1 "VCC" H 9365 1873 50  0000 C CNN
-F 2 "" H 9350 1700 50  0001 C CNN
-F 3 "" H 9350 1700 50  0001 C CNN
-	1    9350 1700
+P 10600 800
+F 0 "#PWR0113" H 10600 650 50  0001 C CNN
+F 1 "VCC" H 10615 973 50  0000 C CNN
+F 2 "" H 10600 800 50  0001 C CNN
+F 3 "" H 10600 800 50  0001 C CNN
+	1    10600 800 
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1163,4 +1133,52 @@ Wire Wire Line
 Connection ~ 9750 5250
 Wire Wire Line
 	9750 5250 10650 5250
+$Comp
+L Device:Polyfuse F1
+U 1 1 60F99DDE
+P 4600 600
+F 0 "F1" V 4375 600 50  0000 C CNN
+F 1 "Polyfuse" V 4466 600 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4650 400 50  0001 L CNN
+F 3 "~" H 4600 600 50  0001 C CNN
+	1    4600 600 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3400 750  3400 1500
+Wire Wire Line
+	3400 750  3700 750 
+Wire Wire Line
+	3400 1500 3700 1500
+Wire Wire Line
+	3400 750  3400 600 
+Wire Wire Line
+	3400 600  4450 600 
+Connection ~ 3400 750 
+Wire Wire Line
+	4750 600  4900 600 
+Wire Wire Line
+	9100 950  9100 1700
+Wire Wire Line
+	9100 950  9100 800 
+Wire Wire Line
+	9100 800  10150 800 
+Connection ~ 9100 950 
+Wire Wire Line
+	9100 950  9400 950 
+Wire Wire Line
+	9100 1700 9400 1700
+$Comp
+L Device:Polyfuse F2
+U 1 1 60FC34AB
+P 10300 800
+F 0 "F2" V 10075 800 50  0000 C CNN
+F 1 "Polyfuse" V 10166 800 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 10350 600 50  0001 L CNN
+F 3 "~" H 10300 800 50  0001 C CNN
+	1    10300 800 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10450 800  10600 800 
 $EndSCHEMATC

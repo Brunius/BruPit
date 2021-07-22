@@ -42,12 +42,12 @@ $EndComp
 $Comp
 L power:+5V #PWR0104
 U 1 1 60C40200
-P 4650 1150
-F 0 "#PWR0104" H 4650 1000 50  0001 C CNN
-F 1 "+5V" H 4665 1323 50  0000 C CNN
-F 2 "" H 4650 1150 50  0001 C CNN
-F 3 "" H 4650 1150 50  0001 C CNN
-	1    4650 1150
+P 4650 750
+F 0 "#PWR0104" H 4650 600 50  0001 C CNN
+F 1 "+5V" H 4665 923 50  0000 C CNN
+F 2 "" H 4650 750 50  0001 C CNN
+F 3 "" H 4650 750 50  0001 C CNN
+	1    4650 750 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -872,17 +872,6 @@ F 3 "" H 5700 1450 50  0001 C CNN
 	1    5700 1450
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+5V #PWR0112
-U 1 1 60D32708
-P 5700 1150
-F 0 "#PWR0112" H 5700 1000 50  0001 C CNN
-F 1 "+5V" H 5715 1323 50  0000 C CNN
-F 2 "" H 5700 1150 50  0001 C CNN
-F 3 "" H 5700 1150 50  0001 C CNN
-	1    5700 1150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5700 1150 5750 1150
 Wire Wire Line
@@ -917,17 +906,6 @@ F 3 "" H 6750 1450 50  0001 C CNN
 	1    6750 1450
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+5V #PWR0114
-U 1 1 60D3B723
-P 6750 1150
-F 0 "#PWR0114" H 6750 1000 50  0001 C CNN
-F 1 "+5V" H 6765 1323 50  0000 C CNN
-F 2 "" H 6750 1150 50  0001 C CNN
-F 3 "" H 6750 1150 50  0001 C CNN
-	1    6750 1150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6750 1150 6800 1150
 Wire Wire Line
@@ -936,4 +914,27 @@ Wire Wire Line
 	6750 1350 6800 1350
 Wire Wire Line
 	6800 1450 6750 1450
+Wire Wire Line
+	6750 1150 6750 1050
+Wire Wire Line
+	6750 1050 5700 1050
+Wire Wire Line
+	5700 1050 5700 1150
+Wire Wire Line
+	4650 1150 4650 1050
+Wire Wire Line
+	4650 1050 5700 1050
+Connection ~ 5700 1050
+$Comp
+L Device:Polyfuse F1
+U 1 1 60FA5A26
+P 4650 900
+F 0 "F1" H 4738 946 50  0000 L CNN
+F 1 "Polyfuse" H 4738 855 50  0000 L CNN
+F 2 "Fuse:Fuse_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4700 700 50  0001 L CNN
+F 3 "~" H 4650 900 50  0001 C CNN
+	1    4650 900 
+	1    0    0    -1  
+$EndComp
+Connection ~ 4650 1050
 $EndSCHEMATC
