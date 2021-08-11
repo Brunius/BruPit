@@ -1,0 +1,47 @@
+Childboard 1:
+
+	J1: Unpopulated
+	J2: 1x4 2.54mm SMD Male
+	J3: 1x4 2.54mm SMD Male
+	J4: 1x4 2.54mm SMD Male
+
+	U1: ATmega168V-AU
+
+	R1: 330
+	R2: 330
+	R3: 330
+	R4: 330	
+	R5: 330
+
+	C1: 100nF
+
+Childboard 2 + 3:
+
+	J1: Unpopulated
+	J2: 1x4 2.54mm SMD Male
+	J3: 1x4 2.54mm SMD Male
+	J4: Unpopulated
+	J5: 1x4 2.54mm SMD Male
+	J6: 1x4 2.54mm SMD Male
+
+	U1: ATmega168V-AU
+	U2: ATmega168V-AU
+
+	R1: 330
+	R5: 330
+
+	C1: 100nF
+	C2: 100nF
+
+Child MFD:
+
+	J1: Unpopulated
+	J2: 1x4 2.54mm SMD Male
+
+	U1: ATmega168V-AU
+
+	R1: 10K
+	R5: 330
+	R8: 330
+
+	C4: 100nF
