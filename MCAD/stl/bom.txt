@@ -1,0 +1,9 @@
+low rate initial production:
+1x frontside
+1x backside
+
+full rate:
+5x frontside
+5x backside
+100x square button
+20x long button
