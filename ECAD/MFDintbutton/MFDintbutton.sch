@@ -14,32 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector_Generic:Conn_01x04 J2
-U 1 1 60C3EB30
-P 4900 1250
-F 0 "J2" H 4980 1242 50  0000 L CNN
-F 1 "Conn_01x04" H 4980 1151 50  0000 L CNN
-F 2 "mycustomlibrary:PinHeader_1x04_P2.54mm_Horizontal_SMD" H 4900 1250 50  0001 C CNN
-F 3 "~" H 4900 1250 50  0001 C CNN
-	1    4900 1250
-	1    0    0    -1  
-$EndComp
-Text GLabel 4650 1250 0    50   Input ~ 0
-SCL
-Text GLabel 4650 1350 0    50   Input ~ 0
-SDA
-$Comp
-L power:GND #PWR0103
-U 1 1 60C3FBB7
-P 4650 1450
-F 0 "#PWR0103" H 4650 1200 50  0001 C CNN
-F 1 "GND" H 4655 1277 50  0000 C CNN
-F 2 "" H 4650 1450 50  0001 C CNN
-F 3 "" H 4650 1450 50  0001 C CNN
-	1    4650 1450
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+5V #PWR0104
 U 1 1 60C40200
 P 4650 750
@@ -50,14 +24,6 @@ F 3 "" H 4650 750 50  0001 C CNN
 	1    4650 750 
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4650 1150 4700 1150
-Wire Wire Line
-	4700 1250 4650 1250
-Wire Wire Line
-	4650 1350 4700 1350
-Wire Wire Line
-	4700 1450 4650 1450
 $Comp
 L Connector_Generic:Conn_02x03_Odd_Even J1
 U 1 1 60C41D8D
@@ -846,17 +812,6 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20w
 	1    2650 3400
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector_Generic:Conn_01x04 J3
-U 1 1 60D326FA
-P 5950 1250
-F 0 "J3" H 6030 1242 50  0000 L CNN
-F 1 "Conn_01x04" H 6030 1151 50  0000 L CNN
-F 2 "mycustomlibrary:PinHeader_1x04_P2.54mm_Horizontal_SMD" H 5950 1250 50  0001 C CNN
-F 3 "~" H 5950 1250 50  0001 C CNN
-	1    5950 1250
-	1    0    0    -1  
-$EndComp
 Text GLabel 5700 1250 0    50   Input ~ 0
 SCL
 Text GLabel 5700 1350 0    50   Input ~ 0
@@ -864,12 +819,12 @@ SDA
 $Comp
 L power:GND #PWR0111
 U 1 1 60D32702
-P 5700 1450
-F 0 "#PWR0111" H 5700 1200 50  0001 C CNN
-F 1 "GND" H 5705 1277 50  0000 C CNN
-F 2 "" H 5700 1450 50  0001 C CNN
-F 3 "" H 5700 1450 50  0001 C CNN
-	1    5700 1450
+P 5700 1550
+F 0 "#PWR0111" H 5700 1300 50  0001 C CNN
+F 1 "GND" H 5705 1377 50  0000 C CNN
+F 2 "" H 5700 1550 50  0001 C CNN
+F 3 "" H 5700 1550 50  0001 C CNN
+	1    5700 1550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -879,18 +834,7 @@ Wire Wire Line
 Wire Wire Line
 	5700 1350 5750 1350
 Wire Wire Line
-	5750 1450 5700 1450
-$Comp
-L Connector_Generic:Conn_01x04 J4
-U 1 1 60D3B715
-P 7000 1250
-F 0 "J4" H 7080 1242 50  0000 L CNN
-F 1 "Conn_01x04" H 7080 1151 50  0000 L CNN
-F 2 "mycustomlibrary:PinHeader_1x04_P2.54mm_Horizontal_SMD" H 7000 1250 50  0001 C CNN
-F 3 "~" H 7000 1250 50  0001 C CNN
-	1    7000 1250
-	1    0    0    -1  
-$EndComp
+	5750 1550 5700 1550
 Text GLabel 6750 1250 0    50   Input ~ 0
 SCL
 Text GLabel 6750 1350 0    50   Input ~ 0
@@ -898,12 +842,12 @@ SDA
 $Comp
 L power:GND #PWR0113
 U 1 1 60D3B71D
-P 6750 1450
-F 0 "#PWR0113" H 6750 1200 50  0001 C CNN
-F 1 "GND" H 6755 1277 50  0000 C CNN
-F 2 "" H 6750 1450 50  0001 C CNN
-F 3 "" H 6750 1450 50  0001 C CNN
-	1    6750 1450
+P 6750 1550
+F 0 "#PWR0113" H 6750 1300 50  0001 C CNN
+F 1 "GND" H 6755 1377 50  0000 C CNN
+F 2 "" H 6750 1550 50  0001 C CNN
+F 3 "" H 6750 1550 50  0001 C CNN
+	1    6750 1550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -913,15 +857,13 @@ Wire Wire Line
 Wire Wire Line
 	6750 1350 6800 1350
 Wire Wire Line
-	6800 1450 6750 1450
+	6800 1550 6750 1550
 Wire Wire Line
 	6750 1150 6750 1050
 Wire Wire Line
 	6750 1050 5700 1050
 Wire Wire Line
 	5700 1050 5700 1150
-Wire Wire Line
-	4650 1150 4650 1050
 Wire Wire Line
 	4650 1050 5700 1050
 Connection ~ 5700 1050
@@ -936,5 +878,45 @@ F 3 "~" H 4650 900 50  0001 C CNN
 	1    4650 900 
 	1    0    0    -1  
 $EndComp
-Connection ~ 4650 1050
+$Comp
+L Connector_Generic:Conn_01x05 J3
+U 1 1 6115CCBA
+P 5950 1350
+F 0 "J3" H 6030 1392 50  0000 L CNN
+F 1 "Conn_01x05" H 6030 1301 50  0000 L CNN
+F 2 "Connector_JST:JST_GH_SM05B-GHS-TB_1x05-1MP_P1.25mm_Horizontal" H 5950 1350 50  0001 C CNN
+F 3 "~" H 5950 1350 50  0001 C CNN
+	1    5950 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J4
+U 1 1 611637B6
+P 7000 1350
+F 0 "J4" H 7080 1392 50  0000 L CNN
+F 1 "Conn_01x05" H 7080 1301 50  0000 L CNN
+F 2 "Connector_JST:JST_GH_SM05B-GHS-TB_1x05-1MP_P1.25mm_Horizontal" H 7000 1350 50  0001 C CNN
+F 3 "~" H 7000 1350 50  0001 C CNN
+	1    7000 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 2800 4300 2800
+Wire Wire Line
+	4300 2800 4300 1850
+Wire Wire Line
+	5750 1450 5500 1450
+Wire Wire Line
+	5500 1450 5500 1850
+Wire Wire Line
+	5500 1850 4300 1850
+Wire Wire Line
+	5500 1850 6500 1850
+Wire Wire Line
+	6500 1850 6500 1450
+Wire Wire Line
+	6500 1450 6800 1450
+Connection ~ 5500 1850
+Text Label 4800 1850 0    50   ~ 0
+BUS_SIGNAL
 $EndSCHEMATC
