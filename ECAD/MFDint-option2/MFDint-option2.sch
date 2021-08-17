@@ -84,12 +84,12 @@ SDA
 $Comp
 L power:GND #PWR0103
 U 1 1 60C3FBB7
-P 3650 1150
-F 0 "#PWR0103" H 3650 900 50  0001 C CNN
-F 1 "GND" H 3655 977 50  0000 C CNN
-F 2 "" H 3650 1150 50  0001 C CNN
-F 3 "" H 3650 1150 50  0001 C CNN
-	1    3650 1150
+P 3650 1050
+F 0 "#PWR0103" H 3650 800 50  0001 C CNN
+F 1 "GND" H 3655 877 50  0000 C CNN
+F 2 "" H 3650 1050 50  0001 C CNN
+F 3 "" H 3650 1050 50  0001 C CNN
+	1    3650 1050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -97,7 +97,7 @@ Wire Wire Line
 Wire Wire Line
 	3650 950  3700 950 
 Wire Wire Line
-	3700 1150 3650 1150
+	3700 1050 3650 1050
 $Comp
 L Connector_Generic:Conn_02x03_Odd_Even J1
 U 1 1 60C41D8D
@@ -399,12 +399,12 @@ SDA
 $Comp
 L power:GND #PWR0107
 U 1 1 60D0878B
-P 3650 1900
-F 0 "#PWR0107" H 3650 1650 50  0001 C CNN
-F 1 "GND" H 3655 1727 50  0000 C CNN
-F 2 "" H 3650 1900 50  0001 C CNN
-F 3 "" H 3650 1900 50  0001 C CNN
-	1    3650 1900
+P 3650 1800
+F 0 "#PWR0107" H 3650 1550 50  0001 C CNN
+F 1 "GND" H 3655 1627 50  0000 C CNN
+F 2 "" H 3650 1800 50  0001 C CNN
+F 3 "" H 3650 1800 50  0001 C CNN
+	1    3650 1800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -423,7 +423,7 @@ Wire Wire Line
 Wire Wire Line
 	3650 1700 3700 1700
 Wire Wire Line
-	3700 1900 3650 1900
+	3700 1800 3650 1800
 Wire Wire Line
 	2500 2000 2250 2000
 Wire Wire Line
@@ -561,7 +561,7 @@ Wire Wire Line
 Wire Wire Line
 	9350 1150 9400 1150
 Wire Wire Line
-	9400 1350 9350 1350
+	9400 1250 9350 1250
 $Comp
 L Connector_Generic:Conn_02x03_Odd_Even J4
 U 1 1 60DC1531
@@ -648,7 +648,7 @@ Wire Wire Line
 Wire Wire Line
 	9350 1900 9400 1900
 Wire Wire Line
-	9400 2100 9350 2100
+	9400 2000 9350 2000
 Wire Wire Line
 	8200 2200 7950 2200
 Wire Wire Line
@@ -769,23 +769,23 @@ $EndComp
 $Comp
 L power:GNDREF #PWR0115
 U 1 1 60DF276B
-P 9350 2100
-F 0 "#PWR0115" H 9350 1850 50  0001 C CNN
-F 1 "GNDREF" H 9355 1927 50  0000 C CNN
-F 2 "" H 9350 2100 50  0001 C CNN
-F 3 "" H 9350 2100 50  0001 C CNN
-	1    9350 2100
+P 9350 2000
+F 0 "#PWR0115" H 9350 1750 50  0001 C CNN
+F 1 "GNDREF" H 9355 1827 50  0000 C CNN
+F 2 "" H 9350 2000 50  0001 C CNN
+F 3 "" H 9350 2000 50  0001 C CNN
+	1    9350 2000
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GNDREF #PWR0116
 U 1 1 60DF3B71
-P 9350 1350
-F 0 "#PWR0116" H 9350 1100 50  0001 C CNN
-F 1 "GNDREF" H 9355 1177 50  0000 C CNN
-F 2 "" H 9350 1350 50  0001 C CNN
-F 3 "" H 9350 1350 50  0001 C CNN
-	1    9350 1350
+P 9350 1250
+F 0 "#PWR0116" H 9350 1000 50  0001 C CNN
+F 1 "GNDREF" H 9355 1077 50  0000 C CNN
+F 2 "" H 9350 1250 50  0001 C CNN
+F 3 "" H 9350 1250 50  0001 C CNN
+	1    9350 1250
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1138,73 +1138,179 @@ $EndComp
 Wire Wire Line
 	10450 800  10600 800 
 $Comp
-L Connector_Generic:Conn_01x05 J5
-U 1 1 611EB8F1
-P 9600 1150
-F 0 "J5" H 9680 1192 50  0000 L CNN
-F 1 "Conn_01x05" H 9680 1101 50  0000 L CNN
-F 2 "Connector_JST:JST_GH_SM05B-GHS-TB_1x05-1MP_P1.25mm_Horizontal" H 9600 1150 50  0001 C CNN
-F 3 "~" H 9600 1150 50  0001 C CNN
-	1    9600 1150
+L Connector_Generic:Conn_01x04 J2
+U 1 1 61314CFD
+P 3900 850
+F 0 "J2" H 3980 842 50  0000 L CNN
+F 1 "Conn_01x04" H 3980 751 50  0000 L CNN
+F 2 "Connector_JST:JST_GH_SM04B-GHS-TB_1x04-1MP_P1.25mm_Horizontal" H 3900 850 50  0001 C CNN
+F 3 "~" H 3900 850 50  0001 C CNN
+	1    3900 850 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x05 J6
-U 1 1 611ED7B6
-P 9600 1900
-F 0 "J6" H 9680 1942 50  0000 L CNN
-F 1 "Conn_01x05" H 9680 1851 50  0000 L CNN
-F 2 "Connector_JST:JST_GH_SM05B-GHS-TB_1x05-1MP_P1.25mm_Horizontal" H 9600 1900 50  0001 C CNN
-F 3 "~" H 9600 1900 50  0001 C CNN
-	1    9600 1900
+L Connector_Generic:Conn_01x04 J3
+U 1 1 6131BA8B
+P 3900 1600
+F 0 "J3" H 3980 1592 50  0000 L CNN
+F 1 "Conn_01x04" H 3980 1501 50  0000 L CNN
+F 2 "Connector_JST:JST_GH_SM04B-GHS-TB_1x04-1MP_P1.25mm_Horizontal" H 3900 1600 50  0001 C CNN
+F 3 "~" H 3900 1600 50  0001 C CNN
+	1    3900 1600
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x05 J2
-U 1 1 611F6121
-P 3900 950
-F 0 "J2" H 3980 992 50  0000 L CNN
-F 1 "Conn_01x05" H 3980 901 50  0000 L CNN
-F 2 "Connector_JST:JST_GH_SM05B-GHS-TB_1x05-1MP_P1.25mm_Horizontal" H 3900 950 50  0001 C CNN
-F 3 "~" H 3900 950 50  0001 C CNN
-	1    3900 950 
+L Connector_Generic:Conn_01x04 J5
+U 1 1 6132468A
+P 9600 1050
+F 0 "J5" H 9680 1042 50  0000 L CNN
+F 1 "Conn_01x04" H 9680 951 50  0000 L CNN
+F 2 "Connector_JST:JST_GH_SM04B-GHS-TB_1x04-1MP_P1.25mm_Horizontal" H 9600 1050 50  0001 C CNN
+F 3 "~" H 9600 1050 50  0001 C CNN
+	1    9600 1050
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x05 J3
-U 1 1 611FE98A
-P 3900 1700
-F 0 "J3" H 3980 1742 50  0000 L CNN
-F 1 "Conn_01x05" H 3980 1651 50  0000 L CNN
-F 2 "Connector_JST:JST_GH_SM05B-GHS-TB_1x05-1MP_P1.25mm_Horizontal" H 3900 1700 50  0001 C CNN
-F 3 "~" H 3900 1700 50  0001 C CNN
-	1    3900 1700
+L Connector_Generic:Conn_01x04 J6
+U 1 1 6132CD23
+P 9600 1800
+F 0 "J6" H 9680 1792 50  0000 L CNN
+F 1 "Conn_01x04" H 9680 1701 50  0000 L CNN
+F 2 "Connector_JST:JST_GH_SM04B-GHS-TB_1x04-1MP_P1.25mm_Horizontal" H 9600 1800 50  0001 C CNN
+F 3 "~" H 9600 1800 50  0001 C CNN
+	1    9600 1800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2250 3500 3300 3500
-Wire Wire Line
-	3300 3500 3300 1800
-Wire Wire Line
-	3300 1050 3700 1050
-Wire Wire Line
-	3700 1800 3300 1800
-Connection ~ 3300 1800
-Wire Wire Line
-	3300 1800 3300 1050
-Wire Wire Line
-	7950 2600 8800 2600
-Wire Wire Line
-	8800 2600 8800 2000
-Wire Wire Line
-	8800 2000 9400 2000
-Wire Wire Line
-	9400 1250 8800 1250
-Wire Wire Line
-	8800 1250 8800 2000
-Connection ~ 8800 2000
-Text Label 3300 2650 1    50   ~ 0
-BUS_SIGNAL
-Text Label 8800 2550 1    50   ~ 0
-BUS_SIGNAL2
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 6137E50C
+P 3350 5650
+F 0 "H1" H 3450 5696 50  0000 L CNN
+F 1 "MountingHole" H 3450 5605 50  0000 L CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4" H 3350 5650 50  0001 C CNN
+F 3 "~" H 3350 5650 50  0001 C CNN
+	1    3350 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 6137FBED
+P 3350 5900
+F 0 "H2" H 3450 5946 50  0000 L CNN
+F 1 "MountingHole" H 3450 5855 50  0000 L CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4" H 3350 5900 50  0001 C CNN
+F 3 "~" H 3350 5900 50  0001 C CNN
+	1    3350 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 61388EFC
+P 3350 6150
+F 0 "H3" H 3450 6196 50  0000 L CNN
+F 1 "MountingHole" H 3450 6105 50  0000 L CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4" H 3350 6150 50  0001 C CNN
+F 3 "~" H 3350 6150 50  0001 C CNN
+	1    3350 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 61388F02
+P 3350 6400
+F 0 "H4" H 3450 6446 50  0000 L CNN
+F 1 "MountingHole" H 3450 6355 50  0000 L CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4" H 3350 6400 50  0001 C CNN
+F 3 "~" H 3350 6400 50  0001 C CNN
+	1    3350 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H8
+U 1 1 61399FBC
+P 4100 6400
+F 0 "H8" H 4200 6446 50  0000 L CNN
+F 1 "MountingHole" H 4200 6355 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 4100 6400 50  0001 C CNN
+F 3 "~" H 4100 6400 50  0001 C CNN
+	1    4100 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H7
+U 1 1 61399FB6
+P 4100 6150
+F 0 "H7" H 4200 6196 50  0000 L CNN
+F 1 "MountingHole" H 4200 6105 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 4100 6150 50  0001 C CNN
+F 3 "~" H 4100 6150 50  0001 C CNN
+	1    4100 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H6
+U 1 1 61399FB0
+P 4100 5900
+F 0 "H6" H 4200 5946 50  0000 L CNN
+F 1 "MountingHole" H 4200 5855 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 4100 5900 50  0001 C CNN
+F 3 "~" H 4100 5900 50  0001 C CNN
+	1    4100 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H5
+U 1 1 61399FAA
+P 4100 5650
+F 0 "H5" H 4200 5696 50  0000 L CNN
+F 1 "MountingHole" H 4200 5605 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 4100 5650 50  0001 C CNN
+F 3 "~" H 4100 5650 50  0001 C CNN
+	1    4100 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H12
+U 1 1 613CDA4C
+P 4850 6400
+F 0 "H12" H 4950 6446 50  0000 L CNN
+F 1 "MountingHole" H 4950 6355 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 4850 6400 50  0001 C CNN
+F 3 "~" H 4850 6400 50  0001 C CNN
+	1    4850 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H11
+U 1 1 613CDA52
+P 4850 6150
+F 0 "H11" H 4950 6196 50  0000 L CNN
+F 1 "MountingHole" H 4950 6105 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 4850 6150 50  0001 C CNN
+F 3 "~" H 4850 6150 50  0001 C CNN
+	1    4850 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H10
+U 1 1 613CDA58
+P 4850 5900
+F 0 "H10" H 4950 5946 50  0000 L CNN
+F 1 "MountingHole" H 4950 5855 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 4850 5900 50  0001 C CNN
+F 3 "~" H 4850 5900 50  0001 C CNN
+	1    4850 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H9
+U 1 1 613CDA5E
+P 4850 5650
+F 0 "H9" H 4950 5696 50  0000 L CNN
+F 1 "MountingHole" H 4950 5605 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 4850 5650 50  0001 C CNN
+F 3 "~" H 4850 5650 50  0001 C CNN
+	1    4850 5650
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

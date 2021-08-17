@@ -1015,41 +1015,6 @@ Wire Wire Line
 	6900 2700 7200 2700
 Text GLabel 5250 3700 2    50   Input ~ 0
 BUS_SIGNAL
-Wire Wire Line
-	3150 5850 3300 5850
-Wire Wire Line
-	3150 5750 3300 5750
-Wire Wire Line
-	3150 5650 3300 5650
-Wire Wire Line
-	3150 5550 3300 5550
-Wire Wire Line
-	3150 5450 3300 5450
-Text GLabel 3150 5450 0    50   Input ~ 0
-GNDREF
-Wire Wire Line
-	3150 5350 3300 5350
-Text GLabel 3150 5350 0    50   Input ~ 0
-GNDREF
-$Comp
-L Connector_Generic:Conn_01x06 FTDI1
-U 1 1 6116595E
-P 3500 5550
-F 0 "FTDI1" H 3580 5542 50  0000 L CNN
-F 1 "Conn_01x06" H 3580 5451 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 3500 5550 50  0001 C CNN
-F 3 "~" H 3500 5550 50  0001 C CNN
-	1    3500 5550
-	1    0    0    -1  
-$EndComp
-Text GLabel 3150 5550 0    50   Input ~ 0
-+5V
-Text GLabel 3150 5850 0    50   Input ~ 0
-RESET
-Text GLabel 3150 5650 0    50   Input ~ 0
-BUS_SIGNAL
-Text GLabel 3150 5750 0    50   Input ~ 0
-R1
 $Comp
 L power:+5V #PWR0102
 U 1 1 61241870
@@ -1059,19 +1024,6 @@ F 1 "+5V" H 6815 823 50  0000 C CNN
 F 2 "" H 6800 650 50  0001 C CNN
 F 3 "" H 6800 650 50  0001 C CNN
 	1    6800 650 
-	1    0    0    -1  
-$EndComp
-Text GLabel 7100 1350 0    50   Input ~ 0
-BUS_SIGNAL
-$Comp
-L Connector_Generic:Conn_01x05 J2
-U 1 1 61241877
-P 7300 1250
-F 0 "J2" H 7380 1292 50  0000 L CNN
-F 1 "Conn_01x05" H 7380 1201 50  0000 L CNN
-F 2 "Connector_JST:JST_GH_SM05B-GHS-TB_1x05-1MP_P1.25mm_Horizontal" H 7300 1250 50  0001 C CNN
-F 3 "~" H 7300 1250 50  0001 C CNN
-	1    7300 1250
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1086,12 +1038,12 @@ F 3 "~" H 6800 850 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	7100 1250 6800 1250
+	7100 1350 6800 1350
 Wire Wire Line
-	6800 1150 7100 1150
-Text GLabel 6800 1250 0    50   Input ~ 0
+	6800 1250 7100 1250
+Text GLabel 6800 1350 0    50   Input ~ 0
 SDA
-Text GLabel 6800 1150 0    50   Input ~ 0
+Text GLabel 6800 1250 0    50   Input ~ 0
 SCL
 Wire Wire Line
 	7100 1450 6800 1450
@@ -1110,27 +1062,6 @@ Wire Wire Line
 	8350 1450 8050 1450
 Wire Wire Line
 	8050 1450 8050 1550
-Text GLabel 8050 1150 0    50   Input ~ 0
-SCL
-Text GLabel 8050 1250 0    50   Input ~ 0
-SDA
-Wire Wire Line
-	8050 1150 8350 1150
-Wire Wire Line
-	8350 1250 8050 1250
-$Comp
-L Connector_Generic:Conn_01x05 J3
-U 1 1 61241894
-P 8550 1250
-F 0 "J3" H 8630 1292 50  0000 L CNN
-F 1 "Conn_01x05" H 8630 1201 50  0000 L CNN
-F 2 "Connector_JST:JST_GH_SM05B-GHS-TB_1x05-1MP_P1.25mm_Horizontal" H 8550 1250 50  0001 C CNN
-F 3 "~" H 8550 1250 50  0001 C CNN
-	1    8550 1250
-	1    0    0    -1  
-$EndComp
-Text GLabel 8350 1350 0    50   Input ~ 0
-BUS_SIGNAL
 Wire Wire Line
 	6800 1450 6800 1550
 Wire Wire Line
@@ -1141,12 +1072,42 @@ Wire Wire Line
 Wire Wire Line
 	6800 700  6800 650 
 Wire Wire Line
-	6800 1000 6800 1050
-Wire Wire Line
-	6800 1050 7100 1050
-Wire Wire Line
-	8350 1050 8350 1000
+	6800 1150 7100 1150
 Wire Wire Line
 	8350 1000 6800 1000
+$Comp
+L Connector_Generic:Conn_01x04 J2
+U 1 1 611D0BB4
+P 7300 1250
+F 0 "J2" H 7380 1242 50  0000 L CNN
+F 1 "Conn_01x04" H 7380 1151 50  0000 L CNN
+F 2 "Connector_JST:JST_GH_SM04B-GHS-TB_1x04-1MP_P1.25mm_Horizontal" H 7300 1250 50  0001 C CNN
+F 3 "~" H 7300 1250 50  0001 C CNN
+	1    7300 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 1000 6800 1150
 Connection ~ 6800 1000
+$Comp
+L Connector_Generic:Conn_01x04 J3
+U 1 1 611E9B82
+P 8550 1250
+F 0 "J3" H 8630 1242 50  0000 L CNN
+F 1 "Conn_01x04" H 8630 1151 50  0000 L CNN
+F 2 "Connector_JST:JST_GH_SM04B-GHS-TB_1x04-1MP_P1.25mm_Horizontal" H 8550 1250 50  0001 C CNN
+F 3 "~" H 8550 1250 50  0001 C CNN
+	1    8550 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 1350 8050 1350
+Wire Wire Line
+	8050 1250 8350 1250
+Text GLabel 8050 1350 0    50   Input ~ 0
+SDA
+Text GLabel 8050 1250 0    50   Input ~ 0
+SCL
+Wire Wire Line
+	8350 1000 8350 1150
 $EndSCHEMATC
