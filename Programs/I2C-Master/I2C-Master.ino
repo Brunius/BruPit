@@ -34,6 +34,48 @@ void ping_bus() {
   }
 }
 
+void writeJoystickValue(int value, int index) {
+  /*
+   * index mappings:
+   *    0 = X
+   *    1 = Y
+   *    2 = Z
+   *    3 = RX
+   *    4 = RY
+   *    5 = RZ
+   */
+   switch (index){
+    case 0:
+      Joystick.setXAxis(value);
+      break;
+    case 1:
+      Joystick.setYAxis(value);
+      break;
+    case 2:
+      Joystick.setZAxis(value);
+      break;
+    case 3:
+      Joystick.setRxAxis(value);
+      break;
+    case 4:
+      Joystick.setRyAxis(value);
+      break;
+    case 5:
+      Joystick.setRzAxis(value);
+      break;
+   }
+   
+}
+
+void setupJoysticks() {
+  Joystick.setXAxisRange(0, 255);
+  Joystick.setYAxisRange(0, 255);
+  Joystick.setZAxisRange(0, 255);
+  Joystick.setRxAxisRange(0, 255);
+  Joystick.setRyAxisRange(0, 255);
+  Joystick.setRzAxisRange(0, 255);
+}
+
 void setup() {
   Serial.begin(9600);
   Wire.begin();
@@ -41,6 +83,7 @@ void setup() {
   ping_bus();
 
   Joystick.begin();
+  setupJoysticks();
   Serial.println("Addresses:");
   for (int i = 0; i < addressLength; i++) {
     Serial.print("  Found device at 0x");
@@ -57,30 +100,35 @@ int millisecondsSincePing = 0;
 
 void loop() {
   uint8_t buttonIndex = 0;
+  uint8_t rotaryIndex = 0;
   for (uint8_t i = 0; i < addressLength; i++) {
     Serial.print("address: 0x");
     Serial.println(addressList[i][0], HEX);
     Serial.print("buttonIndex: ");
     Serial.println(buttonIndex);
     //Determine number of bytes for buttons
-    uint8_t buttonBytes = addressList[i][1]/8;
+    uint8_t requestBytes = addressList[i][1]/8 + addressList[i][2];  //[i][1]/8 gets number of buttons, [i][2] is number of rotaries
     if (addressList[i][1]%8) {
-      buttonBytes++;
+      requestBytes++;
     }
-    Wire.requestFrom(addressList[i][0], buttonBytes);
-    uint8_t transmissionSize = addressList[i][1];
+    Wire.requestFrom(addressList[i][0], requestBytes);
+    uint8_t buttonCount = addressList[i][1];
+    uint8_t rotaryCount = addressList[i][2];
     while (Wire.available()) {
       byte tempByte = Wire.read();
       Serial.print("  Byte - 0x");
       Serial.println(tempByte, HEX);
-      for (uint8_t j = 0; j < 8; j++) {
-        //cycle through buttons, individually setting state
-        Joystick.setButton(buttonIndex, (tempByte&(0x01<<j)));
-        buttonIndex++;
-        transmissionSize--;
-      }
-      if (!transmissionSize) {
-        break;
+      if (buttonCount) {
+        for (uint8_t j = 0; j < 8; j++) {
+          //cycle through buttons, individually setting state
+          Joystick.setButton(buttonIndex, (tempByte&(0x01<<j)));
+          buttonIndex++;
+          buttonCount--;
+        }
+      } else if (rotaryCount) {
+        writeJoystickValue(tempByte, rotaryIndex);
+        rotaryIndex++;
+        rotaryCount--;
       }
     }
   }
