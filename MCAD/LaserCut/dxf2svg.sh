@@ -1,4 +1,4 @@
-for file in *.DXF
+for file in Master*.DXF
 do
     echo $file
     theFile="svgs/"

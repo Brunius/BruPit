@@ -4,33 +4,22 @@
    width="793.7007874015749"
    height="1122.5196850393702"
    version="1.1"
-   id="svg69"
-   sodipodi:docname="UFC-Backplate.svg"
-   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   id="svg75"
+   sodipodi:docname="Master-Front.DXF"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <sodipodi:namedview
-     id="namedview71"
+     id="namedview77"
      pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1.0"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
-     showgrid="false"
-     inkscape:zoom="0.77771467"
-     inkscape:cx="-225.01826"
-     inkscape:cy="574.76092"
-     inkscape:window-width="3840"
-     inkscape:window-height="2066"
-     inkscape:window-x="1525"
-     inkscape:window-y="-11"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="g67" />
+     inkscape:pagecheckerboard="0" />
   <desc
-     id="desc2">UFC-Backplate.DXF - scale = 1.0, origin = (0.0, 0.0), method = manual</desc>
+     id="desc2">Master-Front.DXF - scale = 1.0, origin = (0.0, 0.0), method = manual</desc>
   <defs
      id="defs17">
     <marker
@@ -80,113 +69,114 @@
   <g
      inkscape:groupmode="layer"
      inkscape:label="0"
-     id="g67">
+     id="g73">
     <path
        style="fill:none;stroke:#000000;stroke-width:0.9;stroke-linecap:round"
-       d="M 221.102 1048.82 L 221.102 901.417"
+       d="M 0 1190.55 L 0 1074.94"
        id="path19" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.9;stroke-linecap:round"
-       d="M 221.102 901.417 L 73.7008 901.417"
+       d="M -94.4882 1190.55 L 0 1190.55"
        id="path21" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.9;stroke-linecap:round"
-       d="M 73.7008 901.417 L 73.7008 912.756"
+       d="M -94.4882 1074.94 L -94.4882 1190.55"
        id="path23" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.9;stroke-linecap:round"
-       d="M 73.7008 912.756 L -73.7008 912.756"
+       d="M 0 1074.94 L -94.4882 1074.94"
        id="path25" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:0.9;stroke-linecap:round"
-       d="M -73.7008 912.756 L -73.7008 901.417"
+       d="M 85.487244,1063.218898 A 6.047244,6.047244 -0.000000 1 0 73.392756,1063.218898 6.047244,6.047244 -0.000000 1 0 85.487244,1063.218898 z"
+       style="fill:none;stroke:#000000;stroke-width:0.9;stroke-linecap: round"
        id="path27" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.9;stroke-linecap:round"
-       d="M -73.7008 901.417 L -221.102 901.417"
+       d="M -37.1654 1031.81 L -111.496 1031.81"
        id="path29" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.9;stroke-linecap:round"
-       d="M -221.102 901.417 L -221.102 1048.82"
+       d="M -111.496 1031.81 L -111.496 1092.28"
        id="path31" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.9;stroke-linecap:round"
-       d="M -221.102 1048.82 L -209.764 1048.82"
+       d="M -111.496 1092.28 L -100.157 1092.28"
        id="path33" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.9;stroke-linecap:round"
-       d="M -209.764 1048.82 L -209.764 1196.22"
+       d="M -100.157 1092.28 L -100.157 1152.76"
        id="path35" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.9;stroke-linecap:round"
-       d="M -209.764 1196.22 L -221.102 1196.22"
+       d="M -100.157 1152.76 L -111.496 1152.76"
        id="path37" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.9;stroke-linecap:round"
-       d="M -221.102 1196.22 L -221.102 1343.62"
+       d="M -111.496 1152.76 L -111.496 1213.23"
        id="path39" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.9;stroke-linecap:round"
-       d="M -221.102 1343.62 L -73.7008 1343.62"
+       d="M -111.496 1213.23 L -37.1654 1213.23"
        id="path41" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.9;stroke-linecap:round"
-       d="M -73.7008 1343.62 L -73.7008 1332.28"
+       d="M -37.1654 1213.23 L -37.1654 1201.89"
        id="path43" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.9;stroke-linecap:round"
-       d="M -73.7008 1332.28 L 73.7008 1332.28"
+       d="M -37.1654 1201.89 L 37.1654 1201.89"
        id="path45" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.9;stroke-linecap:round"
-       d="M 73.7008 1332.28 L 73.7008 1343.62"
+       d="M 37.1654 1201.89 L 37.1654 1213.23"
        id="path47" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.9;stroke-linecap:round"
-       d="M 73.7008 1343.62 L 221.102 1343.62"
+       d="M 37.1654 1213.23 L 111.496 1213.23"
        id="path49" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.9;stroke-linecap:round"
-       d="M 221.102 1343.62 L 221.102 1196.22"
+       d="M 111.496 1213.23 L 111.496 1152.76"
        id="path51" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.9;stroke-linecap:round"
-       d="M 221.102 1196.22 L 209.764 1196.22"
+       d="M 111.496 1152.76 L 100.157 1152.76"
        id="path53" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.9;stroke-linecap:round"
-       d="M 209.764 1196.22 L 209.764 1048.82"
+       d="M 100.157 1152.76 L 100.157 1092.28"
        id="path55" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.9;stroke-linecap:round"
-       d="M 209.764 1048.82 L 221.102 1048.82"
+       d="M 100.157 1092.28 L 111.496 1092.28"
        id="path57" />
     <path
-       d="M -133.417323,980.787402 A 8.314961,8.314961 -0.000000 1 0 -150.047244,980.787402 8.314961,8.314961 -0.000000 1 0 -133.417323,980.787402 z"
-       style="fill:none;stroke:#000000;stroke-width:0.9;stroke-linecap: round"
+       style="fill:none;stroke:#000000;stroke-width:0.9;stroke-linecap:round"
+       d="M 111.496 1092.28 L 111.496 1031.81"
        id="path59" />
     <path
-       d="M 150.047244,980.787402 A 8.314961,8.314961 -0.000000 1 0 133.417323,980.787402 8.314961,8.314961 -0.000000 1 0 150.047244,980.787402 z"
-       style="fill:none;stroke:#000000;stroke-width:0.9;stroke-linecap: round"
+       style="fill:none;stroke:#000000;stroke-width:0.9;stroke-linecap:round"
+       d="M 111.496 1031.81 L 37.1654 1031.81"
        id="path61" />
     <path
-       d="M 150.047244,1264.251969 A 8.314961,8.314961 -0.000000 1 0 133.417323,1264.251969 8.314961,8.314961 -0.000000 1 0 150.047244,1264.251969 z"
-       style="fill:none;stroke:#000000;stroke-width:0.9;stroke-linecap: round"
+       style="fill:none;stroke:#000000;stroke-width:0.9;stroke-linecap:round"
+       d="M 37.1654 1031.81 L 37.1654 1043.15"
        id="path63" />
     <path
-       d="M -133.417323,1264.251969 A 8.314961,8.314961 -0.000000 1 0 -150.047244,1264.251969 8.314961,8.314961 -0.000000 1 0 -133.417323,1264.251969 z"
-       style="fill:none;stroke:#000000;stroke-width:0.9;stroke-linecap: round"
+       style="fill:none;stroke:#000000;stroke-width:0.9;stroke-linecap:round"
+       d="M 37.1654 1043.15 L -37.1654 1043.15"
        id="path65" />
-    <text
-       xml:space="preserve"
-       style="font-size:15.1181px;line-height:1.25;font-family:'Courier New';-inkscape-font-specification:'Courier New';fill:none;stroke:#00ff00;stroke-width:0.9;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       x="-156.45561"
-       y="1307.9633"
-       id="text3327"><tspan
-         sodipodi:role="line"
-         id="tspan3325"
-         x="-156.45561"
-         y="1307.9633"
-         style="font-size:15.1181px;fill:none;stroke:#00ff00;stroke-width:0.9;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">https://github.com/Brunius/BruPit/</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.9;stroke-linecap:round"
+       d="M -37.1654 1043.15 L -37.1654 1031.81"
+       id="path67" />
+    <path
+       d="M -73.392756,1063.218898 A 6.047244,6.047244 -0.000000 1 0 -85.487244,1063.218898 6.047244,6.047244 -0.000000 1 0 -73.392756,1063.218898 z"
+       style="fill:none;stroke:#000000;stroke-width:0.9;stroke-linecap: round"
+       id="path69" />
+    <path
+       d="M 85.487244,1173.618898 A 6.047244,6.047244 -0.000000 1 0 73.392756,1173.618898 6.047244,6.047244 -0.000000 1 0 85.487244,1173.618898 z"
+       style="fill:none;stroke:#000000;stroke-width:0.9;stroke-linecap: round"
+       id="path71" />
   </g>
 </svg>
